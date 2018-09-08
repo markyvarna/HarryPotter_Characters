@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EqZ-Ug-v9r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Characters-->
+        <scene sceneID="c09-yP-beD">
+            <objects>
+                <tableViewController id="Wy7-rb-IJP" customClass="HPListTableViewController" customModule="Harry_Potter_Info" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xWK-E8-fTN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" alpha="0.25" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="hpCell" rowHeight="140" id="9vl-WX-pWH" customClass="HPTableViewCell" customModule="Harry_Potter_Info" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9vl-WX-pWH" id="KCl-3K-5zR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qvz-5e-RKS">
+                                            <rect key="frame" x="145.5" y="8" width="221.5" height="123.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harry Potter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xx4-2R-fIg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="221.5" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gryffindor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SE5-My-Peh">
+                                                    <rect key="frame" x="0.0" y="54" width="221.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wizard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUa-nR-ALh">
+                                                    <rect key="frame" x="0.0" y="89" width="221.5" height="34.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xx4-2R-fIg" firstAttribute="width" secondItem="Qvz-5e-RKS" secondAttribute="width" id="F4P-11-nJx"/>
+                                                <constraint firstItem="SE5-My-Peh" firstAttribute="width" secondItem="Qvz-5e-RKS" secondAttribute="width" id="OcR-BY-S4J"/>
+                                                <constraint firstItem="VUa-nR-ALh" firstAttribute="width" secondItem="Qvz-5e-RKS" secondAttribute="width" id="anN-RI-qVD"/>
+                                            </constraints>
+                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wizardHat" translatesAutoresizingMaskIntoConstraints="NO" id="J0w-1a-Q7P" customClass="RoundImageView" customModule="Harry_Potter_Info" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="7" width="125.5" height="125.5"/>
+                                            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="J0w-1a-Q7P" secondAttribute="height" multiplier="1:1" id="Egs-1z-lfI"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Qvz-5e-RKS" firstAttribute="top" secondItem="KCl-3K-5zR" secondAttribute="top" constant="8" id="6wF-ap-08F"/>
+                                        <constraint firstItem="Qvz-5e-RKS" firstAttribute="centerY" secondItem="KCl-3K-5zR" secondAttribute="centerY" id="Gpt-KE-rS7"/>
+                                        <constraint firstItem="J0w-1a-Q7P" firstAttribute="leading" secondItem="KCl-3K-5zR" secondAttribute="leading" constant="16" id="Z1t-OM-9xE"/>
+                                        <constraint firstItem="J0w-1a-Q7P" firstAttribute="centerY" secondItem="KCl-3K-5zR" secondAttribute="centerY" id="duD-zd-Osc"/>
+                                        <constraint firstItem="J0w-1a-Q7P" firstAttribute="height" secondItem="KCl-3K-5zR" secondAttribute="height" multiplier="0.9" id="h3f-ma-jOo"/>
+                                        <constraint firstItem="Qvz-5e-RKS" firstAttribute="leading" secondItem="J0w-1a-Q7P" secondAttribute="trailing" constant="4" id="sAo-SI-iYG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qvz-5e-RKS" secondAttribute="trailing" constant="8" id="J8e-LF-f7c"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="houseLabel" destination="SE5-My-Peh" id="mMn-rm-N0Q"/>
+                                    <outlet property="hpCharacterImageView" destination="J0w-1a-Q7P" id="Jxn-rE-EII"/>
+                                    <outlet property="nameLabel" destination="xx4-2R-fIg" id="yGx-gd-7ud"/>
+                                    <outlet property="speciesLabel" destination="VUa-nR-ALh" id="NDh-xV-1GH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wy7-rb-IJP" id="UWU-HO-zzj"/>
+                            <outlet property="delegate" destination="Wy7-rb-IJP" id="ZGZ-6l-SQG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Characters" id="qbL-qf-hIB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R51-vI-lY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="142.57871064467767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4nY-gj-sDC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EqZ-Ug-v9r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XJx-1E-3tp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="40"/>
+                            <color key="textColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="62"/>
+                            <color key="textColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wy7-rb-IJP" kind="relationship" relationship="rootViewController" id="PpQ-53-JAX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mY0-Vm-77t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.199999999999999" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wizardHat" width="256" height="256"/>
+    </resources>
+</document>
