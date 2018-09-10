@@ -16,6 +16,7 @@
 		45E3756421444408008285ED /* HPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3756321444408008285ED /* HPTableViewCell.swift */; };
 		45E375672144495C008285ED /* HPListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E375662144495C008285ED /* HPListTableViewController.swift */; };
 		45E37569214461FA008285ED /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E37568214461FA008285ED /* RoundImageView.swift */; };
+		45E3756B214599AD008285ED /* CharacterInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E3756A214599AD008285ED /* CharacterInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		45E3756321444408008285ED /* HPTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPTableViewCell.swift; sourceTree = "<group>"; };
 		45E375662144495C008285ED /* HPListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPListTableViewController.swift; sourceTree = "<group>"; };
 		45E37568214461FA008285ED /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		45E3756A214599AD008285ED /* CharacterInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				45E3750C2141E69A008285ED /* CharacterController.swift */,
 				45E375662144495C008285ED /* HPListTableViewController.swift */,
+				45E3756A214599AD008285ED /* CharacterInfoVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				45E3750B2141E689008285ED /* Character.swift in Sources */,
 				45E3756421444408008285ED /* HPTableViewCell.swift in Sources */,
 				45E37569214461FA008285ED /* RoundImageView.swift in Sources */,
+				45E3756B214599AD008285ED /* CharacterInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
